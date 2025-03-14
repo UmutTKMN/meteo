@@ -1,0 +1,28 @@
+<!-- filepath: d:\website\test\public\weather-icon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <linearGradient id="sun-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#FFD700" />
+    <stop offset="100%" stop-color="#FFA500" />
+  </linearGradient>
+  <linearGradient id="cloud-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#F5F5F5" />
+    <stop offset="100%" stop-color="#E0E0E0" />
+  </linearGradient>
+  
+  <!-- Sun -->
+  <circle cx="32" cy="28" r="12" fill="url(#sun-gradient)" />
+  
+  <!-- Rays -->
+  <line x1="32" y1="12" x2="32" y2="8" stroke="#FFD700" stroke-width="2" />
+  <line x1="32" y1="48" x2="32" y2="44" stroke="#FFD700" stroke-width="2" />
+  <line x1="16" y1="28" x2="12" y2="28" stroke="#FFD700" stroke-width="2" />
+  <line x1="52" y1="28" x2="48" y2="28" stroke="#FFD700" stroke-width="2" />
+  
+  <line x1="20.5" y1="16.5" x2="17.5" y2="13.5" stroke="#FFD700" stroke-width="2" />
+  <line x1="43.5" y1="39.5" x2="46.5" y2="42.5" stroke="#FFD700" stroke-width="2" />
+  <line x1="20.5" y1="39.5" x2="17.5" y2="42.5" stroke="#FFD700" stroke-width="2" />
+  <line x1="43.5" y1="16.5" x2="46.5" y2="13.5" stroke="#FFD700" stroke-width="2" />
+  
+  <!-- Cloud -->
+  <path d="M25,38 C25,34.5 27.5,32 31,32 C32.8,32 34.4,32.8 35.4,34.1 C36.2,33.4 37.3,33 38.5,33 C41,33 43,35 43,37.5 C43,40 41,42 38.5,42 L27.5,42 C26.1,42 25,40.9 25,39.5 C25,39.0 25.0,38.5 25,38 Z" fill="url(#cloud-gradient)" />
+</svg>
