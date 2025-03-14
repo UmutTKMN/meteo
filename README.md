@@ -2,7 +2,7 @@
 
 Modern ve etkileşimli bir hava durumu uygulaması. Anlık ve tahminli hava durumu bilgilerini güzel bir arayüzle sunar.
 
-![Hava Durumu Uygulaması](https://via.placeholder.com/800x400?text=Hava+Durumu+Uygulamas%C4%B1)
+![Hava Durumu Uygulaması](https://github.com/UmutTKMN/meteo/blob/main/public/meteo-example.png)
 
 ## Özellikler
 
