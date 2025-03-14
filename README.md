@@ -71,8 +71,8 @@ src/
 1. Projeyi klonlayın:
 
    ```bash
-   git clone [repo-url]
-   cd [proje-klasörü]
+   git clone https://github.com/UmutTKMN/meteo.git
+   cd meteo
    ```
 
 2. Bağımlılıkları yükleyin:
