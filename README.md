@@ -127,4 +127,4 @@ MIT Lisansı altında dağıtılmaktadır. Daha fazla bilgi için `LICENSE` dosy
 
 ## İletişim
 
-Proje Link: [https://github.com/yourusername/weather-app](https://github.com/yourusername/weather-app)
+Proje Link: [https://github.com/UmutTKMN/meteo]
