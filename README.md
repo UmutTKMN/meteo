@@ -38,13 +38,13 @@ Canlı animasyonlar, detaylı grafikler ve interaktif harita özellikleriyle hav
 ## 📸 Ekran Görüntüleri
 
 <div align="center">
-  <img src="https://i.imgur.com/rVD5LDB.png" alt="Ana Ekran" width="600px">
+  <img src="https://github.com/UmutTKMN/meteo/blob/main/screenshots/ana-ekran.png" alt="Ana Ekran" width="600px">
   <p><em>Ana Ekran</em></p>
   
-  <img src="https://i.imgur.com/9CgFu2s.png" alt="Haftalık Tahmin" width="600px">
+  <img src="https://github.com/UmutTKMN/meteo/blob/main/screenshots/haftal%C4%B1k.png" alt="Haftalık Tahmin" width="600px">
   <p><em>Haftalık Tahmin ve Grafikler</em></p>
   
-  <img src="https://i.imgur.com/CtGCZy4.png" alt="Hava Durumu Haritası" width="600px">
+  <img src="https://github.com/UmutTKMN/meteo/blob/main/screenshots/harita.png" alt="Hava Durumu Haritası" width="600px">
   <p><em>İnteraktif Hava Durumu Haritası</em></p>
 </div>
 
@@ -53,6 +53,7 @@ Canlı animasyonlar, detaylı grafikler ve interaktif harita özellikleriyle hav
 Bu projede aşağıdaki teknolojileri kullanıyoruz:
 
 - **Frontend**:
+
   - [React 19](https://react.dev/) - Modern kullanıcı arayüzü geliştirme
   - [Vite](https://vitejs.dev/) - Hızlı geliştirme ortamı
   - [Tailwind CSS 4](https://tailwindcss.com/) - Stil ve tasarım
@@ -73,28 +74,34 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları takip 
 ### Adımlar
 
 1. Projeyi klonlayın:
+
    ```bash
-   git clone https://github.com/kullanici-adi/meteo.git
+   git clone https://github.com/UmutTKMN/meteo.git
    cd meteo
    ```
 
 2. Bağımlılıkları yükleyin:
+
    ```bash
    pnpm install
    ```
 
 3. `.env.example` dosyasını `.env` olarak kopyalayın:
+
    ```bash
    cp .env.example .env
    ```
 
 4. `.env` dosyasını açın ve OpenWeatherMap API anahtarınızı ekleyin:
+
    ```
    VITE_WEATHER_API_KEY=sizin_api_anahtarınız
    ```
+
    > 📝 **Not**: API anahtarını [OpenWeatherMap](https://openweathermap.org/api) web sitesinden ücretsiz olarak alabilirsiniz.
 
 5. Uygulamayı başlatın:
+
    ```bash
    pnpm dev
    ```
@@ -114,15 +121,18 @@ Bu uygulama, hava durumu verilerini çekmek için OpenWeatherMap API'sini kullan
 Sık karşılaşılan sorunlar ve çözümleri:
 
 ### API Bağlantı Hataları
+
 - API anahtarınızın doğru olduğundan emin olun
 - Internet bağlantınızı kontrol edin
 - API kullanım limitinizi aşmadığınızdan emin olun
 
 ### Konum Hataları
+
 - Tarayıcınızda konum servislerine izin verdiğinizden emin olun
 - HTTPS kullanmak, konum servislerinin daha güvenilir çalışmasını sağlar
 
 ### Görüntüleme Sorunları
+
 - En son tarayıcı sürümünü kullandığınızdan emin olun
 - Tarayıcı önbelleğini temizlemeyi deneyin
 
@@ -135,7 +145,7 @@ Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır. Detaylı bilgi iç
 <div align="center">
   <p>❤️ ile geliştirildi</p>
   <p>
-    <a href="https://github.com/kullanici-adi">GitHub</a> •
-    <a href="https://twitter.com/kullanici-adi">Twitter</a>
+    <a href="https://github.com/kahrastudio">GitHub</a> •
+    <a href="https://twitter.com/kahrastudio">Twitter</a>
   </p>
-</div> 
+</div>
