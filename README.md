@@ -1,130 +1,141 @@
-# Hava Durumu Uygulaması
+# 🌦️ Meteo - Modern Hava Durumu Uygulaması
 
-Modern ve etkileşimli bir hava durumu uygulaması. Anlık ve tahminli hava durumu bilgilerini güzel bir arayüzle sunar.
+<div align="center">
+  <img src="https://i.imgur.com/JkxF8Mv.png" alt="Meteo Uygulaması" width="800px">
+</div>
 
-![Hava Durumu Uygulaması](https://github.com/UmutTKMN/meteo/blob/main/public/meteo-example.png)
+## 📋 İçerik
 
-## Özellikler
+- [Proje Hakkında](#-proje-hakkında)
+- [Özellikler](#-özellikler)
+- [Ekran Görüntüleri](#-ekran-görüntüleri)
+- [Teknolojiler](#-teknolojiler)
+- [Kurulum](#-kurulum)
+- [API Kullanımı](#-api-kullanımı)
+- [Hata Giderme](#-hata-giderme)
+- [Lisans](#-lisans)
 
-- **Anlık Hava Durumu**: Seçilen konum için güncel hava durumu bilgileri
-- **5 Günlük Tahmin**: Gelecek 5 gün için hava durumu tahminleri
-- **Saatlik Tahminler**: 24 saatlik detaylı hava durumu tahminleri
-- **Etkileşimli Sıcaklık Grafiği**: Sıcaklık değişimlerini görselleştiren grafik
-- **Hava Kalitesi Bilgisi**: Seçilen konum için hava kalitesi verileri ve analizi
-- **Konum Bazlı Hava Durumu**: Kullanıcının konumuna göre otomatik hava durumu bilgisi
-- **Konum Haritası**: Seçilen lokasyonun hava durumu haritası
-- **Favori Konumlar**: Sık kullanılan konumları kaydetme ve hızlıca erişim
-- **Aktivite Önerileri**: Hava durumuna göre önerilen aktiviteler
-- **Otomatik Yenileme**: Ayarlanabilir aralıklarla hava durumu verilerini güncelleme
-- **Karanlık/Aydınlık Mod**: Kullanıcının tercihine göre arayüz teması
-- **Hava Durumu Animasyonları**: Mevcut hava durumunu canlandıran animasyonlar
-- **Duyarlı Tasarım**: Tüm ekran boyutlarına uyumlu arayüz
+## 🌤️ Proje Hakkında
 
-## Teknoloji Yığını
+Meteo, modern ve kullanıcı dostu arayüzü ile hava durumu bilgilerini anlık olarak takip etmenizi sağlayan bir web uygulamasıdır. OpenWeatherMap API entegrasyonu sayesinde dünyanın herhangi bir yerindeki güncel hava durumu ve tahminlere erişebilirsiniz.
 
-- **Frontend**: React, Vite
-- **UI Kütüphanesi**: TailwindCSS
-- **Harita**: Leaflet
-- **API**: OpenWeatherMap
-- **Grafikler**: Canvas API
-- **Animasyonlar**: CSS & SVG
-- **Veri Saklaması**: LocalStorage
+Canlı animasyonlar, detaylı grafikler ve interaktif harita özellikleriyle hava durumu deneyiminizi zenginleştirir.
 
-## Proje Yapısı
+## ✨ Özellikler
 
-```
-src/
-├── components/
-│   ├── animations/
-│   │   ├── WeatherAnimation.jsx
-│   │   └── weatherAnimations.css
-│   ├── charts/
-│   │   └── TemperatureChart.jsx
-│   ├── favorites/
-│   │   └── FavoriteLocations.jsx
-│   ├── layout/
-│   │   ├── AutoRefresh.jsx
-│   │   └── Header.jsx
-│   ├── recommendations/
-│   │   └── ActivityRecommendations.jsx
-│   ├── ui/
-│   │   ├── AlertBanner.jsx
-│   │   ├── LocationPermission.jsx
-│   │   ├── Notification.jsx
-│   │   └── QuickActions.jsx
-│   └── weather/
-│       ├── AirQuality.jsx
-│       ├── CurrentWeather.jsx
-│       ├── ForecastWeather.jsx
-│       ├── HourlyForecast.jsx
-│       ├── WeatherDetails.jsx
-│       └── WeatherMap.jsx
-├── services/
-│   └── weatherService.js
-├── App.jsx
-├── main.jsx
-└── tailwind.css
-```
+- **🔍 Şehir Bazlı Arama**: Dünyanın herhangi bir yerindeki hava durumu bilgilerine erişin
+- **📍 Konum Bazlı Hava Durumu**: Tarayıcınızın konum servisini kullanarak bulunduğunuz yerin hava durumunu görüntüleyin
+- **📊 Detaylı Tahminler**: Günlük ve saatlik hava tahminleri
+- **📈 Sıcaklık Grafikleri**: Görsel sıcaklık değişim grafikleri
+- **🗺️ İnteraktif Harita**: Harita üzerinde hava durumu görüntüleme
+- **🌈 Hava Durumu Animasyonları**: Güncel hava durumuna göre değişen canlı animasyonlar
+- **💨 Rüzgar, Nem ve Basınç Bilgileri**: Detaylı hava durumu parametreleri
+- **🌡️ Hissedilen Sıcaklık**: Gerçek ve hissedilen sıcaklık değerleri
+- **🏖️ Aktivite Önerileri**: Hava durumuna göre günlük aktivite önerileri
+- **⭐ Favori Şehirler**: Sık kullandığınız şehirleri kaydetme özelliği
+- **🔔 Hava Durumu Uyarıları**: Aşırı hava koşulları için uyarı sistemi
 
-## Kurulum
+## 📸 Ekran Görüntüleri
+
+<div align="center">
+  <img src="https://i.imgur.com/rVD5LDB.png" alt="Ana Ekran" width="600px">
+  <p><em>Ana Ekran</em></p>
+  
+  <img src="https://i.imgur.com/9CgFu2s.png" alt="Haftalık Tahmin" width="600px">
+  <p><em>Haftalık Tahmin ve Grafikler</em></p>
+  
+  <img src="https://i.imgur.com/CtGCZy4.png" alt="Hava Durumu Haritası" width="600px">
+  <p><em>İnteraktif Hava Durumu Haritası</em></p>
+</div>
+
+## 🛠️ Teknolojiler
+
+Bu projede aşağıdaki teknolojileri kullanıyoruz:
+
+- **Frontend**:
+  - [React 19](https://react.dev/) - Modern kullanıcı arayüzü geliştirme
+  - [Vite](https://vitejs.dev/) - Hızlı geliştirme ortamı
+  - [Tailwind CSS 4](https://tailwindcss.com/) - Stil ve tasarım
+  - [Leaflet](https://leafletjs.com/) - İnteraktif haritalar
+
+- **API**:
+  - [OpenWeatherMap API](https://openweathermap.org/api) - Hava durumu verileri
+
+## 🚀 Kurulum
+
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları takip edin:
+
+### Ön Koşullar
+
+- Node.js (16.x veya üzeri)
+- pnpm (8.x veya üzeri)
+
+### Adımlar
 
 1. Projeyi klonlayın:
-
    ```bash
-   git clone https://github.com/UmutTKMN/meteo.git
+   git clone https://github.com/kullanici-adi/meteo.git
    cd meteo
    ```
 
 2. Bağımlılıkları yükleyin:
-
    ```bash
-   npm install
+   pnpm install
    ```
 
-3. `.env` dosyası oluşturun ve OpenWeatherMap API anahtarınızı ekleyin:
+3. `.env.example` dosyasını `.env` olarak kopyalayın:
+   ```bash
+   cp .env.example .env
+   ```
 
+4. `.env` dosyasını açın ve OpenWeatherMap API anahtarınızı ekleyin:
    ```
    VITE_WEATHER_API_KEY=sizin_api_anahtarınız
    ```
+   > 📝 **Not**: API anahtarını [OpenWeatherMap](https://openweathermap.org/api) web sitesinden ücretsiz olarak alabilirsiniz.
 
-4. Geliştirme sunucusunu başlatın:
+5. Uygulamayı başlatın:
    ```bash
-   npm run dev
+   pnpm dev
    ```
 
-## Kullanım
+6. Tarayıcınızda şu adresi açın: `http://localhost:5173`
 
-### API Anahtarı Alma
+## 🔑 API Kullanımı
 
-Bu uygulama OpenWeatherMap API'sini kullanır. Ücretsiz bir API anahtarı almak için [OpenWeatherMap](https://openweathermap.org/api) adresine kayıt olun.
+Bu uygulama, hava durumu verilerini çekmek için OpenWeatherMap API'sini kullanır. API kullanımıyla ilgili aşağıdaki noktalara dikkat edin:
 
-### Özelleştirme
+- Ücretsiz API planı dakikada 60 istek ile sınırlıdır
+- Ücretsiz API planı ile 5 günlük/3 saatlik tahmin verisi alabilirsiniz
+- API anahtarınızı güvenli bir şekilde saklayın ve halka açık depolarda paylaşmayın
 
-- **API Anahtarı**: `services/weatherService.js` dosyasında API anahtarınızı güncelleyin
-- **Varsayılan Şehir**: `App.jsx` içinde varsayılan şehri değiştirin
-- **Renk Teması**: `tailwind.config.js` dosyasını özelleştirin
-- **Yenileme Aralığı**: `App.jsx` içinde `AutoRefresh` bileşenindeki `interval` değerini ayarlayın
+## 🔧 Hata Giderme
 
-### Diğer Şehirler İçin Hava Durumu
+Sık karşılaşılan sorunlar ve çözümleri:
 
-Uygulama başlığındaki arama çubuğunu kullanarak istediğiniz şehrin hava durumunu arayabilirsiniz. Sık kullandığınız şehirleri favorilere ekleyerek hızlıca erişebilirsiniz.
+### API Bağlantı Hataları
+- API anahtarınızın doğru olduğundan emin olun
+- Internet bağlantınızı kontrol edin
+- API kullanım limitinizi aşmadığınızdan emin olun
 
-### Konum İzni
+### Konum Hataları
+- Tarayıcınızda konum servislerine izin verdiğinizden emin olun
+- HTTPS kullanmak, konum servislerinin daha güvenilir çalışmasını sağlar
 
-Uygulamanın konumunuzu kullanmasına izin verirseniz, otomatik olarak bulunduğunuz yerin hava durumu bilgilerini gösterir.
+### Görüntüleme Sorunları
+- En son tarayıcı sürümünü kullandığınızdan emin olun
+- Tarayıcı önbelleğini temizlemeyi deneyin
 
-## Katkıda Bulunma
+## 📄 Lisans
 
-1. Bu repo'yu fork'layın
-2. Yeni özellik için bir branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Değişikliklerinizi commit'leyin (`git commit -m 'Yeni özellik: Amazing Feature'`)
-4. Branch'inizi push'layın (`git push origin feature/amazing-feature`)
-5. Bir Pull Request oluşturun
+Bu proje [MIT lisansı](LICENSE) altında lisanslanmıştır. Detaylı bilgi için lisans dosyasını inceleyebilirsiniz.
 
-## Lisans
+---
 
-MIT Lisansı altında dağıtılmaktadır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
-
-## İletişim
-
-Proje Link: [https://github.com/UmutTKMN/meteo]
+<div align="center">
+  <p>❤️ ile geliştirildi</p>
+  <p>
+    <a href="https://github.com/kullanici-adi">GitHub</a> •
+    <a href="https://twitter.com/kullanici-adi">Twitter</a>
+  </p>
+</div> 
