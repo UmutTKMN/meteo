@@ -1,7 +1,7 @@
 # 🌦️ Meteo - Modern Hava Durumu Uygulaması
 
 <div align="center">
-  <img src="https://github.com/UmutTKMN/meteo/blob/main/public/weather-icon.svg" alt="Meteo Uygulaması" width="800px">
+  <img src="https://github.com/UmutTKMN/meteo/blob/main/public/weather-icon.svg" alt="Meteo Uygulaması" width="150px">
 </div>
 
 ## 📋 İçerik
